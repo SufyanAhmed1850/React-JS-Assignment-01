@@ -1,0 +1,12 @@
+@import "../../root/style.css";
+
+.theme {
+    padding: .75rem 1rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: var(--background);
+    background-color: var(--accent);
+}

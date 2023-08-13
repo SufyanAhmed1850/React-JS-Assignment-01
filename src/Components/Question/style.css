@@ -1,0 +1,13 @@
+@import "../../root/style.css";
+
+.question {
+    background-color: var(--secondary);
+    color: var(--text);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 16px var(--shadow);
+}
+
+h1 {
+    font-size: 1.25rem;
+}
