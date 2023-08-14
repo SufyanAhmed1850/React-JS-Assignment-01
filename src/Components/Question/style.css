@@ -1,13 +1,33 @@
-@import "../../root/style.css";
-
 .question {
-    background-color: var(--secondary);
-    color: var(--text);
+    background-color: var(--primary);
+    color: var(--invt);
     padding: 1rem 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 3px 16px var(--shadow);
+    width: 100%;
 }
 
-h1 {
-    font-size: 1.25rem;
+h2 {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .2rem;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    background-color: var(--line);
+    width: 45%;
+    height: 4px;
+    border-radius: 16px;
+}
+
+code {
+    font-weight: 700;
+}
+
+.link {
+    word-break: break-all;
 }

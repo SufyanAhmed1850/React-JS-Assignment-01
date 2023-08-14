@@ -1,5 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-@import "./root/style.css";
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --text: #081521;
+  --invt: #eef5fb;
+  --background: #eef5fb;
+  --primary: #6cb1b1;
+  --secondary: #cee9e9;
+  --accent: #405050;
+  --shadow: #100f0f6e;
+  --line: #193333;
+  --code-bg: #212121;
+  --code: #EEFFFF;
+  --code-dim: #ffffff80;
+  --code-blue: #89DDFF;
+  --code-yellow: #FFD700;
+  --code-green: #C3E88D;
+  --code-red: #F07178;
+  --code-orange: #F78C6C;
+  --code-pink: #C792EA;
+  --code-purple: #82AAFF;
+}
+
+.dark {
+  --text: #eef5fb;
+  --invt: #e3eaf0;
+  --background: #171618;
+  --primary: #4a8383;
+  --secondary: #153030;
+  --accent: #c5c4c4;
+  --shadow: #100f0f6e;
+}
 
 * {
   margin: 0;
@@ -21,18 +52,18 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Space Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 #root {
-  width: 98%;
+  width: 95%;
   max-width: 1250px;
   margin: 1rem 0 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 img {
