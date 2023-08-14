@@ -1,8 +1,19 @@
 import "./index.css";
+import { motion } from "framer-motion";
 
 function Post({ img, name, address, title, body }) {
     return (
-        <div className="card">
+        <motion.div
+            className="card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{
+                scale: [null, 1.08, 1.06],
+                borderRadius: ["1rem", ".5rem"],
+            }}
+            whileTap={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+        >
             <div className="header">
                 <div className="profile-image">
                     <img src={img} alt="Profile Image" />
@@ -16,7 +27,7 @@ function Post({ img, name, address, title, body }) {
                 <h1>{title}</h1>
                 <p>{body}</p>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

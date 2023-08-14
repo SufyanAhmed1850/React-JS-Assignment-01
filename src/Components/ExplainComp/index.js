@@ -1,4 +1,5 @@
 import "./index.css";
+import { motion } from "framer-motion";
 
 function ExplainComp() {
     return (
@@ -12,7 +13,14 @@ function ExplainComp() {
                     primary functionality.
                 </p>
                 <h4>Example:</h4>
-                <div className="code">
+                <motion.div
+                    className="code"
+                    whileHover={{
+                        scale: [null, 1.08, 1.05],
+                        borderRadius: [".5rem", ".25rem", ".75rem"],
+                    }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                >
                     <code>
                         <span className="dim">
                             // Assuming 'package' exports a default function
@@ -36,7 +44,7 @@ function ExplainComp() {
                         </span>
                         <span className="blue">;</span>
                     </code>
-                </div>
+                </motion.div>
             </div>
             <div>
                 <code className="head">
@@ -49,7 +57,14 @@ function ExplainComp() {
                     constants from the module.
                 </p>
                 <h4>Example:</h4>
-                <div className="code">
+                <motion.div
+                    className="code"
+                    whileHover={{
+                        scale: [null, 1.08, 1.05],
+                        borderRadius: [".5rem", ".25rem", ".75rem"],
+                    }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                >
                     <code>
                         <span className="dim">
                             // Assuming 'package' exports multiple functions
@@ -76,7 +91,7 @@ function ExplainComp() {
                         </span>
                         <span className="blue">;</span>
                     </code>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

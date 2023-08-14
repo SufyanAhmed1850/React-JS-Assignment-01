@@ -8,12 +8,12 @@
     color: var(--text);
     border-radius: 1rem;
     cursor: pointer;
-    transition: all ease-out 200ms;
+    /* transition: all ease-out 200ms; */
 }
-
+/* 
 .card:hover {
     transform: scale(1.03);
-}
+} */
 
 .header {
     display: flex;

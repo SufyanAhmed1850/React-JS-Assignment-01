@@ -1,4 +1,5 @@
 import "./index.css";
+import { motion } from "framer-motion";
 
 function ConstsToComp() {
     const name = "Hello World";
@@ -15,25 +16,61 @@ function ConstsToComp() {
     ];
     return (
         <div className="q1-wrapper">
-            <div>
+            <motion.div
+                whileHover={{
+                    scale: [null, 1.1, 1.07],
+                    borderRadius: ["1rem", ".5rem"],
+                }}
+                whileTap={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+            >
                 <p>{name}</p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+                whileHover={{
+                    scale: [null, 1.1, 1.07],
+                    borderRadius: ["1rem", ".5rem"],
+                }}
+                whileTap={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+            >
                 <p>{obj.name}</p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+                whileHover={{
+                    scale: [null, 1.1, 1.07],
+                    borderRadius: ["1rem", ".5rem"],
+                }}
+                whileTap={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+            >
                 <div className="q-data">
                     {data.map((d, k) => {
                         return <p key={k}>{d}</p>;
                     })}
                 </div>
-            </div>
-            <ol>
+            </motion.div>
+            <motion.ol
+                whileHover={{
+                    scale: [null, 1.1, 1.07],
+                    borderRadius: ["1rem", ".5rem"],
+                }}
+                whileTap={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+            >
                 {list.map((l, k) => {
                     return <li key={k}>{l.name}</li>;
                 })}
-            </ol>
-            <div className="q-complex">
+            </motion.ol>
+            <motion.div
+                className="q-complex"
+                whileHover={{
+                    scale: [null, 1.1, 1.07],
+                    borderRadius: ["1rem", ".5rem"],
+                }}
+                whileTap={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+            >
                 {complex.map((c, k) => {
                     return (
                         <div key={k}>
@@ -44,7 +81,7 @@ function ConstsToComp() {
                         </div>
                     );
                 })}
-            </div>
+            </motion.div>
         </div>
     );
 }

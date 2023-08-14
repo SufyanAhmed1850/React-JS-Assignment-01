@@ -20,13 +20,13 @@
     min-width: 200px;
     align-items: center;
     cursor: pointer;
-    transition: all ease-out 200ms;
+    /* transition: all ease-out 200ms; */
 }
 
-.q1-wrapper>div:hover,
+/* .q1-wrapper>div:hover,
 .q1-wrapper>ol:hover {
     transform: scale(1.03);
-}
+} */
 
 li {
     list-style-position: inside;
@@ -39,6 +39,7 @@ li {
 }
 
 .q-complex {
+    flex: 1;
     background-color: var(--secondary);
     display: flex;
     justify-content: space-between;
@@ -48,7 +49,7 @@ li {
     text-align: left;
     align-items: center;
     cursor: pointer;
-    transition: all ease-out 200ms;
+    /* transition: all ease-out 200ms; */
 }
 
 .q-complex div {
