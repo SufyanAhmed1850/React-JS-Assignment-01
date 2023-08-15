@@ -14,25 +14,35 @@ function ThemeBtn() {
     }, []);
     useEffect(() => {
         if (dark) {
-            document.body.classList.add("dark");
             setSource(Sun);
+            document.body.classList.add("dark");
             localStorage.setItem("theme", JSON.stringify("dark"));
         } else {
-            document.body.classList.remove("dark");
             setSource(Moon);
+            document.body.classList.remove("dark");
             localStorage.setItem("theme", JSON.stringify("light"));
         }
     }, [dark]);
     return (
         <motion.div
             className="theme"
+            initial={{ scale: 1 }}
             whileTap={{
-                scale: 0.9,
-                borderRadius: [".5rem", ".75rem"],
+                scale: 0.8,
+            }}
+            whileHover={{
+                scale: 1.1,
             }}
             onClick={() => setDark(!dark)}
         >
-            <img className="theme-img" src={source} alt="moon" />
+            <motion.img
+                className="theme-img"
+                whileHover={{
+                    rotate: -90,
+                }}
+                src={source}
+                alt="moon"
+            />
         </motion.div>
     );
 }

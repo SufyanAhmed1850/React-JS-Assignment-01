@@ -27,11 +27,13 @@
     color: var(--code);
     border-radius: .5rem;
     padding: 1rem 1.5rem;
-    font-size: .875rem;
     box-shadow: 0 6px 16px var(--shadow);
     cursor: pointer;
 }
-.explain .code code{
+
+.explain .code code {
+    font-size: .91rem !important;
+    font-weight: 400;
     cursor: auto;
 }
 

@@ -21,7 +21,7 @@ function ConstsToComp() {
                     scale: [null, 1.1, 1.07],
                     borderRadius: ["1rem", ".5rem"],
                 }}
-                whileTap={{ scale: 1.02 }}
+                whileTap={{ scale: 0.9 }}
                 transition={{ duration: 0.3 }}
             >
                 <p>{name}</p>
@@ -31,7 +31,7 @@ function ConstsToComp() {
                     scale: [null, 1.1, 1.07],
                     borderRadius: ["1rem", ".5rem"],
                 }}
-                whileTap={{ scale: 1.02 }}
+                whileTap={{ scale: 0.9 }}
                 transition={{ duration: 0.3 }}
             >
                 <p>{obj.name}</p>
@@ -41,7 +41,7 @@ function ConstsToComp() {
                     scale: [null, 1.1, 1.07],
                     borderRadius: ["1rem", ".5rem"],
                 }}
-                whileTap={{ scale: 1.02 }}
+                whileTap={{ scale: 0.9 }}
                 transition={{ duration: 0.3 }}
             >
                 <div className="q-data">
@@ -55,7 +55,7 @@ function ConstsToComp() {
                     scale: [null, 1.1, 1.07],
                     borderRadius: ["1rem", ".5rem"],
                 }}
-                whileTap={{ scale: 1.02 }}
+                whileTap={{ scale: 0.9 }}
                 transition={{ duration: 0.3 }}
             >
                 {list.map((l, k) => {
@@ -68,7 +68,7 @@ function ConstsToComp() {
                     scale: [null, 1.1, 1.07],
                     borderRadius: ["1rem", ".5rem"],
                 }}
-                whileTap={{ scale: 1.02 }}
+                whileTap={{ scale: 0.9 }}
                 transition={{ duration: 0.3 }}
             >
                 {complex.map((c, k) => {

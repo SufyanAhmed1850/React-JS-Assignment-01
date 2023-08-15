@@ -1,4 +1,3 @@
-
 .card {
     display: flex;
     flex-direction: column;
@@ -8,12 +7,8 @@
     color: var(--text);
     border-radius: 1rem;
     cursor: pointer;
-    /* transition: all ease-out 200ms; */
+    outline: none;
 }
-/* 
-.card:hover {
-    transform: scale(1.03);
-} */
 
 .header {
     display: flex;
@@ -43,5 +38,5 @@
 }
 
 .body h1 {
-    font-size: 1.5rem;
+    font-size: 1.225rem;
 }

@@ -23,7 +23,7 @@ function ExplainComp() {
                 >
                     <code>
                         <span className="dim">
-                            // Assuming 'package' exports a default function
+                            {"//"} Assuming 'package' exports a default function
                         </span>
                         {<br />}
                         <span className="blue">import</span> Calculator{" "}
@@ -67,7 +67,7 @@ function ExplainComp() {
                 >
                     <code>
                         <span className="dim">
-                            // Assuming 'package' exports multiple functions
+                            {"//"} Assuming 'package' exports multiple functions
                         </span>
                         {<br />}
                         <span className="blue">import</span>{" "}

@@ -11,12 +11,12 @@ function Post({ img, name, address, title, body }) {
                 scale: [null, 1.08, 1.06],
                 borderRadius: ["1rem", ".5rem"],
             }}
-            whileTap={{ scale: 1.02 }}
+            whileTap={{ scale: 0.9 }}
             transition={{ duration: 0.3 }}
         >
             <div className="header">
                 <div className="profile-image">
-                    <img src={img} alt="Profile Image" />
+                    <img src={img} alt="Profile" />
                 </div>
                 <div className="profile-info">
                     <p className="name">{name}</p>
